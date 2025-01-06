@@ -3,43 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn English Easily</title>
-   
+    <title>Interactive English Exercise Database</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?education,english') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #4CAF50;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .feature {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        .feature h3 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+        .feature p {
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        footer p {
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Learn English Easily</h1>
-        <p>Master English with our interactive and fun lessons!</p>
+        <h1>Interactive English Exercise Database</h1>
+        <p>Explore a wide range of interactive exercises to enhance English learning for educators and students.</p>
     </header>
 
     <section class="hero">
-        <h2>Your journey to fluent English starts here</h2>
+        <h2>Discover Exercises to Empower Learning</h2>
     </section>
 
     <section class="container">
-        <h2>Why Choose Us?</h2>
+        <h2>Explore Categories</h2>
         <div class="features">
             <div class="feature">
-                <h3>Interactive Lessons</h3>
-                <p>Engage in activities that make learning fun and effective.</p>
+                <h3>Grammar Exercises</h3>
+                <p>Master English grammar with interactive activities tailored for all levels.</p>
             </div>
             <div class="feature">
-                <h3>Experienced Teachers</h3>
-                <p>Learn from certified experts passionate about teaching English.</p>
+                <h3>Vocabulary Exercises</h3>
+                <p>Expand your vocabulary with fun and engaging word-building challenges.</p>
             </div>
             <div class="feature">
-                <h3>Flexible Schedules</h3>
-                <p>Study at your own pace with classes that fit your schedule.</p>
+                <h3>Pronunciation Practice</h3>
+                <p>Improve your speaking skills with tools and exercises for clear pronunciation.</p>
             </div>
             <div class="feature">
-                <h3>Community Support</h3>
-                <p>Join a vibrant community of learners and practice together.</p>
+                <h3>Reading and Writing</h3>
+                <p>Enhance comprehension and writing abilities with guided exercises.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Learn English Easily. All Rights Reserved.</p>
+        <p>&copy; 2025 Interactive English Exercise Database. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
+
